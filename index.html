@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main id="container">
+        <div id="calculator-frame">
+            <header>
+                <h3 id="heading">Calculator</h3>
+            </header>
+            <div>
+                <input type="text" id="output-screen" placeholder="0" readonly>
+            </div>
+            <section id="buttons-frame">
+                <div>
+                    <button type="button" onclick="square()" class="buttons" title="Square">x<sup>2</sup></button>
+                    <button type="button" onclick="squareRoot()" class="buttons" title="Square root">&radic;</button>
+                    <button type="button" onclick="buttonFunction('/')" class="buttons">&divide;</button>
+                    <button type="button" onclick="clearInput()" class="button-AC" title="All clear">AC</button>
+                </div>
+                <div>
+                    <button type="button" onclick="buttonFunction(7)" class="buttons">7</button>
+                    <button type="button" onclick="buttonFunction(8)" class="buttons">8</button>
+                    <button type="button" onclick="buttonFunction(9)" class="buttons">9</button>
+                    <button type="button" onclick="buttonFunction('+')" class="buttons">+</button>
+                </div>
+                <div>
+                    <button type="button" onclick="buttonFunction(4)" class="buttons">4</button>
+                    <button type="button" onclick="buttonFunction(5)" class="buttons">5</button>
+                    <button type="button" onclick="buttonFunction(6)" class="buttons">6</button>
+                    <button type="button" onclick="buttonFunction('-')" class="buttons">-</button>                    
+                </div>
+                <div>
+                    <button type="button" onclick="buttonFunction(1)" class="buttons">1</button>
+                    <button type="button" onclick="buttonFunction(2)" class="buttons">2</button>
+                    <button type="button" onclick="buttonFunction(3)" class="buttons">3</button>                   
+                    <button type="button" onclick="buttonFunction('*')" class="buttons">x</button>                    
+                </div>
+                <div>
+                    <button type="button" onclick="buttonFunction(0)" class="buttons">0</button>
+                    <button type="button" onclick="buttonFunction('.')" class="buttons">.</button>
+                    <button type="button" onclick="result()" class="button-equal">=</button>                    
+                </div>                
+            </section>
+        </div>
+    </main>    
+</body>
+</html>
